@@ -1,0 +1,13 @@
+{
+  "name": "asynchronous_loading",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "3.5",
+    "actioncable": "^5.2.2",
+    "bulma": "^0.7.4",
+    "stimulus": "^1.1.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
+  }
+}

@@ -1,0 +1,18 @@
+<div class="columns" data-controller="commits" data-commits-url="https://api.github.com/repos/rails/rails/commits?per_page=15&sha=">
+  <div class="column is-one-third">
+    <aside class="menu">
+      <ul class="menu-list">
+        <% tags.each do |tag| %>
+          <li>
+            <a data-action="commits#selectBranch" data-target="commits.option" data-tag-name="<%= tag['name'] %>"><%= tag['name'] %></a>
+          </li>
+        <% end %>
+      </ul>
+    </aside>
+  </div>
+  <div class="column content is-two-thirds">
+    <p>rails/rails@<span data-target="commits.branch"></span></p>
+    <ul data-target="commits.commits" class="content">
+    </ul>
+  </div>
+</div>
